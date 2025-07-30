@@ -47,10 +47,10 @@ const Header = () => {
             className="flex items-center space-x-2"
           >
             <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">L</span>
+              <span className="text-white font-bold text-xl">DU</span>
             </div>
             <span className="font-display text-2xl font-bold text-gray-900">
-              Luxe Interiors
+              Design Universe
             </span>
           </motion.div>
 
@@ -73,11 +73,11 @@ const Header = () => {
             <div className="flex items-center space-x-4 text-sm text-gray-600">
               <div className="flex items-center space-x-1">
                 <Phone className="w-4 h-4" />
-                <span>(555) 123-4567</span>
+                <span>+91 7036431442</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Mail className="w-4 h-4" />
-                <span>hello@luxeinteriors.com</span>
+                <span>sales@designuniverse.in</span>
               </div>
             </div>
             <Button 

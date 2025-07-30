@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>DEsign Universe - Premium Interior Design & Architecture</title>
+        <title>Design Universe - Premium Interior Design & Architecture</title>
         <meta name="description" content="Transform your space with Design Universe. Award-winning interior design and architecture firm specializing in luxury residential and commercial projects." />
       </Helmet>
       
