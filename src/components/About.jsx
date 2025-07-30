@@ -44,7 +44,7 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              For over 15 years, Luxe Interiors has been transforming ordinary spaces into extraordinary experiences. Our passion for design excellence and commitment to client satisfaction has made us the premier choice for discerning homeowners and businesses.
+              For over 15 years, Design Universe has been transforming ordinary spaces into extraordinary experiences. Our passion for design excellence and commitment to client satisfaction has made us the premier choice for discerning homeowners and businesses.
             </p>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">

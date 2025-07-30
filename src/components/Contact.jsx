@@ -32,19 +32,19 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: ['(555) 123-4567', '(555) 987-6543'],
+      details: ['+91 7036431442', '+91 8639827614'],
       description: 'Call us for immediate assistance'
     },
     {
       icon: Mail,
       title: 'Email',
-      details: ['hello@luxeinteriors.com', 'projects@luxeinteriors.com'],
+      details: ['Sales@designuniverse.in', 'srilekha@designuniverse.in'],
       description: 'Send us your project details'
     },
     {
       icon: MapPin,
       title: 'Office',
-      details: ['123 Design Avenue', 'New York, NY 10001'],
+      details: ['123 Design Avenue', 'Hyderabad, Telangana 500062'],
       description: 'Visit our design studio'
     },
     {
