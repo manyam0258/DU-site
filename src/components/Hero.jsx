@@ -33,12 +33,12 @@ const Hero = () => {
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-10 w-20 h-20 bg-amber-400/20 rounded-full blur-xl"
+        className="absolute top-20 left-10 w-20 h-20 bg-golden/20 rounded-full blur-xl"
       />
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-20 right-10 w-32 h-32 bg-amber-600/20 rounded-full blur-xl"
+        className="absolute bottom-20 right-10 w-32 h-32 bg-golden/20 rounded-full blur-xl"
       />
 
       {/* Content */}
@@ -77,7 +77,7 @@ const Hero = () => {
             <Button
               onClick={handleGetStarted}
               size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg font-semibold group"
+              className="bg-black hover:bg-golden-dark text-white px-8 py-4 text-lg font-semibold group"
             >
               Get Started Today
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -87,7 +87,7 @@ const Hero = () => {
               onClick={handleWatchVideo}
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-semibold group"
+              className="border-white text-white hover:bg-white hover:text-black px-8 py-4 text-lg font-semibold group"
             >
               <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
               Watch Our Story
@@ -107,7 +107,7 @@ const Hero = () => {
               { number: '98%', label: 'Client Satisfaction' }
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="font-display text-3xl md:text-4xl font-bold text-amber-400 mb-2">
+                <div className="font-display text-3xl md:text-4xl font-bold text-golden mb-2">
                   {stat.number}
                 </div>
                 <div className="text-sm md:text-base text-gray-300">

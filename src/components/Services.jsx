@@ -68,11 +68,11 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-black mb-6">
             Our Design
             <span className="gradient-text"> Services</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             From concept to completion, we offer comprehensive design services tailored to your unique vision and lifestyle needs.
           </p>
         </motion.div>
@@ -96,24 +96,24 @@ const Services = () => {
                  src="https://images.unsplash.com/photo-1595872018818-97555653a011" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 <div className="absolute top-4 left-4 w-12 h-12 bg-white/90 rounded-lg flex items-center justify-center">
-                  <service.icon className="w-6 h-6 text-amber-600" />
+                  <service.icon className="w-6 h-6 text-golden" />
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="font-display text-xl font-bold text-gray-900 mb-3">
+                <h3 className="font-display text-xl font-bold text-black mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-black mb-4 leading-relaxed">
                   {service.description}
                 </p>
 
                 {/* Features */}
                 <ul className="space-y-2 mb-6">
                   {service.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                      <div className="w-1.5 h-1.5 bg-amber-600 rounded-full mr-3"></div>
+                    <li key={featureIndex} className="flex items-center text-sm text-black">
+                      <div className="w-1.5 h-1.5 bg-golden rounded-full mr-3"></div>
                       {feature}
                     </li>
                   ))}
@@ -122,7 +122,7 @@ const Services = () => {
                 <Button
                   onClick={handleLearnMore}
                   variant="outline"
-                  className="w-full border-amber-600 text-amber-600 hover:bg-amber-600 hover:text-white"
+                  className="w-full border-golden text-golden hover:bg-golden-dark hover:text-white"
                 >
                   Learn More
                 </Button>
@@ -139,17 +139,17 @@ const Services = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-amber-50 to-amber-100 rounded-2xl p-8 md:p-12">
-            <h3 className="font-display text-3xl font-bold text-gray-900 mb-4">
+          <div className="bg-gradient-to-r from-golden/20 to-golden/30 rounded-2xl p-8 md:p-12">
+            <h3 className="font-display text-3xl font-bold text-black mb-4">
               Ready to Transform Your Space?
             </h3>
-            <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-black mb-8 max-w-2xl mx-auto">
               Let's discuss your vision and create a design plan that brings your dream space to life.
             </p>
             <Button
               onClick={handleLearnMore}
               size="lg"
-              className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 text-lg"
+              className="bg-black hover:bg-golden-dark text-white px-8 py-4 text-lg"
             >
               Schedule Consultation
             </Button>

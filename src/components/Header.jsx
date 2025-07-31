@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,9 +47,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">DU</span>
-            </div>
+            <img src={logo} alt="Design Universe Logo" className="h-10" />
             <span className="font-display text-2xl font-bold text-gray-900">
               Design Universe
             </span>
@@ -60,17 +59,17 @@ const Header = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
-                className="text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200 relative group"
+                className="text-black hover:text-golden font-bold transition-colors duration-200 relative group"
               >
                 {item}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-600 transition-all duration-200 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-golden transition-all duration-200 group-hover:w-full"></span>
               </button>
             ))}
           </nav>
 
           {/* Contact Info & CTA */}
           <div className="hidden lg:flex items-center space-x-4">
-            <div className="flex items-center space-x-4 text-sm text-gray-600">
+            <div className="flex items-center space-x-4 text-sm text-black">
               <div className="flex items-center space-x-1">
                 <Phone className="w-4 h-4" />
                 <span>+91 7036431442</span>
@@ -82,7 +81,7 @@ const Header = () => {
             </div>
             <Button 
               onClick={handleContact}
-              className="bg-amber-600 hover:bg-amber-700 text-white px-6 py-2"
+              className="bg-black hover:bg-golden-dark text-white px-6 py-2"
             >
               Get Quote
             </Button>
@@ -91,7 +90,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-amber-600 transition-colors"
+            className="lg:hidden p-2 text-black hover:text-golden transition-colors"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -110,7 +109,7 @@ const Header = () => {
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
-                  className="block w-full text-left px-4 py-2 text-gray-700 hover:text-amber-600 hover:bg-gray-50 transition-colors"
+                  className="block w-full text-left px-4 py-2 text-black hover:text-golden hover:bg-gray-50 transition-colors"
                 >
                   {item}
                 </button>
@@ -118,7 +117,7 @@ const Header = () => {
               <div className="px-4 pt-4 border-t border-gray-200">
                 <Button 
                   onClick={handleContact}
-                  className="w-full bg-amber-600 hover:bg-amber-700 text-white"
+                  className="w-full bg-black hover:bg-golden-dark text-white"
                 >
                   Get Quote
                 </Button>

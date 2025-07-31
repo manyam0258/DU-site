@@ -51,7 +51,7 @@ const Contact = () => {
       icon: Clock,
       title: 'Hours',
       details: ['Mon - Fri: 9AM - 6PM', 'Sat: 10AM - 4PM'],
-      description: 'We\'re here to help'
+      description: 'We are here to help'
     }
   ];
 
@@ -77,11 +77,11 @@ const Contact = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-black mb-6">
             Let's Create Something
             <span className="gradient-text"> Amazing Together</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             Ready to transform your space? Get in touch with our design experts and let's bring your vision to life.
           </p>
         </motion.div>
@@ -95,14 +95,14 @@ const Contact = () => {
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-lg p-8"
           >
-            <h3 className="font-display text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="font-display text-2xl font-bold text-black mb-6">
               Start Your Project
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-black mb-2">
                     Full Name *
                   </label>
                   <input
@@ -111,12 +111,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-golden focus:border-transparent transition-colors"
                     placeholder="Your full name"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-black mb-2">
                     Email Address *
                   </label>
                   <input
@@ -125,7 +125,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-golden focus:border-transparent transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -133,7 +133,7 @@ const Contact = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-black mb-2">
                     Phone Number
                   </label>
                   <input
@@ -141,19 +141,19 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-golden focus:border-transparent transition-colors"
                     placeholder="(555) 123-4567"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-black mb-2">
                     Service Needed
                   </label>
                   <select
                     name="service"
                     value={formData.service}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-golden focus:border-transparent transition-colors"
                   >
                     <option value="">Select a service</option>
                     {services.map((service) => (
@@ -166,7 +166,7 @@ const Contact = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-black mb-2">
                   Project Details *
                 </label>
                 <textarea
@@ -175,7 +175,7 @@ const Contact = () => {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-golden focus:border-transparent transition-colors resize-none"
                   placeholder="Tell us about your project, timeline, budget, and any specific requirements..."
                 ></textarea>
               </div>
@@ -183,7 +183,7 @@ const Contact = () => {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-amber-600 hover:bg-amber-700 text-white py-4 text-lg font-semibold"
+                className="w-full bg-black hover:bg-golden-dark text-white py-4 text-lg font-semibold"
               >
                 <Send className="mr-2 w-5 h-5" />
                 Send Message
@@ -210,12 +210,12 @@ const Contact = () => {
                   viewport={{ once: true }}
                   className="bg-white rounded-xl shadow-lg p-6 hover-lift"
                 >
-                  <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
-                    <info.icon className="w-6 h-6 text-amber-600" />
+                  <div className="w-12 h-12 bg-golden/20 rounded-lg flex items-center justify-center mb-4">
+                    <info.icon className="w-6 h-6 text-golden" />
                   </div>
-                  <h4 className="font-semibold text-gray-900 mb-2">{info.title}</h4>
+                  <h4 className="font-semibold text-black mb-2">{info.title}</h4>
                   {info.details.map((detail, detailIndex) => (
-                    <p key={detailIndex} className="text-gray-600 text-sm mb-1">
+                    <p key={detailIndex} className="text-black text-sm mb-1">
                       {detail}
                     </p>
                   ))}
@@ -232,15 +232,15 @@ const Contact = () => {
               viewport={{ once: true }}
               className="bg-white rounded-xl shadow-lg overflow-hidden"
             >
-              <div className="h-64 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
+              <div className="h-64 bg-gradient-to-br from-golden/20 to-golden/30 flex items-center justify-center">
                 <img  
                   alt="Map showing Luxe Interiors office location in New York"
                   className="w-full h-full object-cover"
                  src="https://images.unsplash.com/photo-1625216787868-1541d4a4c28f" />
               </div>
               <div className="p-6">
-                <h4 className="font-semibold text-gray-900 mb-2">Visit Our Studio</h4>
-                <p className="text-gray-600 text-sm">
+                <h4 className="font-semibold text-black mb-2">Visit Our Studio</h4>
+                <p className="text-black text-sm">
                   Come see our latest designs and meet with our team in person. 
                   Appointments recommended for personalized consultations.
                 </p>
@@ -253,7 +253,7 @@ const Contact = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-amber-600 to-amber-700 rounded-xl shadow-lg p-8 text-white"
+              className="bg-gradient-to-r from-golden to-black rounded-xl shadow-lg p-8 text-white"
             >
               <h4 className="font-display text-xl font-bold mb-4">
                 Need Immediate Assistance?
@@ -265,7 +265,7 @@ const Contact = () => {
                 <Button
                   onClick={() => toast({ title: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀" })}
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-amber-600"
+                  className="border-white text-white hover:bg-white hover:text-golden-dark"
                 >
                   <Phone className="mr-2 w-4 h-4" />
                   Call Now
@@ -273,7 +273,7 @@ const Contact = () => {
                 <Button
                   onClick={() => toast({ title: "🚧 This feature isn't implemented yet—but don't worry! You can request it in your next prompt! 🚀" })}
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-amber-600"
+                  className="border-white text-white hover:bg-white hover:text-golden-dark"
                 >
                   <Mail className="mr-2 w-4 h-4" />
                   Email Us
